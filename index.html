@@ -1,470 +1,297 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#123C3A">
-  <meta name="description" content="وعي منصة عربية للتوعية والحماية الرقمية">
-  <title>وَعْي | WAI - وعيك خط دفاعك الأول</title>
+  <meta name="description" content="وَعْي منصة توعوية لتعزيز الوعي والأمان الرقمي.">
+  <title>وَعْي | وعيك خط دفاعك الأول</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header class="header">
-  <a class="brand" href="#home">
-    <span class="brand-shield">♙</span>
-    <span>
-      <strong>وَعْي</strong>
-      <small>W A I</small>
-    </span>
+<header class="navbar">
+  <a href="index.html" class="logo">
+    <span class="logo-mark">و</span>
+    <span>وَعْي</span>
   </a>
 
-  <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة">☰</button>
-
-  <nav class="nav" id="nav">
-    <a class="active" href="#home">الرئيسية</a>
-    <a href="#services">الخدمات</a>
-    <a href="#library">المكتبة</a>
-    <a href="#saudi">المرجع السيبراني السعودي</a>
-    <a href="#about">عن المشروع</a>
+  <nav class="nav-links">
+    <a href="#home">الرئيسية</a>
+    <a href="#services">خدماتنا</a>
+    <a href="#scanner">اختبر المحتوى</a>
+    <a href="#sources">مصادر موثوقة</a>
+    <a href="about.html">عن وَعْي</a>
   </nav>
 
-  <a class="contact-btn" href="#footer">تواصل معنا ↗</a>
+  <a href="#scanner" class="nav-button">ابدأ الآن</a>
 </header>
 
-<main id="home">
+<main>
 
-  <!-- HERO -->
-  <section class="hero">
-
-    <div class="hero-art">
-      <div class="art-glow"></div>
-
-      <svg viewBox="0 0 650 390" role="img" aria-label="درع الحماية الرقمية">
-        <defs>
-          <linearGradient id="shieldGradient" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stop-color="#9DE9D7"/>
-            <stop offset=".48" stop-color="#237D76"/>
-            <stop offset="1" stop-color="#0C393A"/>
-          </linearGradient>
-          <linearGradient id="glassGradient" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stop-color="#D7FFF5" stop-opacity=".65"/>
-            <stop offset="1" stop-color="#3AA69B" stop-opacity=".08"/>
-          </linearGradient>
-          <filter id="glow">
-            <feGaussianBlur stdDeviation="7" result="blur"/>
-            <feMerge>
-              <feMergeNode in="blur"/>
-              <feMergeNode in="SourceGraphic"/>
-            </feMerge>
-          </filter>
-        </defs>
-
-        <path d="M0 300 Q120 190 240 280 T500 230 T650 260 V390 H0Z"
-              fill="#1C7771" opacity=".25"/>
-        <path d="M0 325 Q150 235 280 315 T650 260"
-              fill="none" stroke="#70D8C7" stroke-width="3" opacity=".65"/>
-
-        <g opacity=".5" fill="#BDEBE3">
-          <path d="M15 260V180H55V260Z"/>
-          <path d="M60 260V135H95V260Z"/>
-          <path d="M100 260V190H130V260Z"/>
-          <path d="M515 260V150H545V260Z"/>
-          <path d="M550 260V105H590V260Z"/>
-          <path d="M600 260V175H635V260Z"/>
-        </g>
-
-        <g fill="none" stroke="#6DE2D1" opacity=".75" filter="url(#glow)">
-          <ellipse cx="320" cy="235" rx="245" ry="55" transform="rotate(-9 320 235)"/>
-          <ellipse cx="320" cy="235" rx="210" ry="37" transform="rotate(-9 320 235)"/>
-        </g>
-
-        <g transform="translate(225 35)">
-          <path d="M95 0 L185 40 L175 160 Q160 235 95 280 Q30 235 15 160 L5 40Z"
-                fill="url(#glassGradient)" stroke="#A7F4E5" stroke-width="8"/>
-          <path d="M95 17 L166 50 L158 153 Q145 213 95 250 Q45 213 32 153 L24 50Z"
-                fill="url(#shieldGradient)" stroke="#D2FFF4" stroke-width="3"/>
-          <rect x="63" y="115" width="65" height="65" rx="12"
-                fill="#D8FFF5" opacity=".95"/>
-          <path d="M78 115V96 A18 18 0 0 1 114 96V115"
-                fill="none" stroke="#D8FFF5" stroke-width="10"/>
-          <circle cx="95" cy="142" r="7" fill="#17615C"/>
-          <path d="M95 148V162" stroke="#17615C" stroke-width="6" stroke-linecap="round"/>
-          <path d="M48 65L95 43L142 65" fill="none" stroke="#BFFFF1" stroke-width="3"/>
-        </g>
-
-        <g transform="translate(55 145)">
-          <rect width="82" height="75" rx="15" fill="url(#glassGradient)" stroke="#B8FFF1"/>
-          <path d="M22 22 Q41 4 60 22 M22 34 Q41 16 60 34 M27 46 Q41 31 55 46"
-                fill="none" stroke="#D6FFF6" stroke-width="4" stroke-linecap="round"/>
-        </g>
-
-        <g transform="translate(150 80)">
-          <rect width="85" height="68" rx="13" fill="url(#glassGradient)" stroke="#B8FFF1"/>
-          <rect x="18" y="19" width="48" height="32" rx="5"
-                fill="none" stroke="#D6FFF6" stroke-width="3"/>
-          <path d="M18 21L42 39L66 21" fill="none" stroke="#D6FFF6" stroke-width="3"/>
-        </g>
-
-        <g transform="translate(490 135)">
-          <rect width="85" height="75" rx="14" fill="url(#glassGradient)" stroke="#B8FFF1"/>
-          <circle cx="42" cy="37" r="23" fill="none" stroke="#D6FFF6" stroke-width="3"/>
-          <path d="M19 37H65 M42 14Q23 37 42 60 M42 14Q61 37 42 60"
-                fill="none" stroke="#D6FFF6" stroke-width="2"/>
-        </g>
-      </svg>
-    </div>
-
-    <div class="hero-content">
-      <span class="eyebrow">منصة الوعي والحماية الرقمية</span>
+  <section class="hero section" id="home">
+    <div class="hero-content reveal">
+      <span class="eyebrow">وعي رقمي • أمان • معرفة</span>
       <h1>وَعْي</h1>
       <h2>وعيك خط دفاعك الأول</h2>
+
       <p>
-        منصة ذكية للوعي والحماية الرقمية،
-        تساعدك على اكتشاف المخاطر وحماية خصوصيتك
-        لتعيش عالمًا رقميًا أكثر أمانًا.
+        في عالم رقمي مليء بالمعلومات والروابط والرسائل،
+        يمنحك وَعْي المعرفة التي تساعدك على التمييز
+        والتحقق واتخاذ قرارات رقمية أكثر أمانًا.
       </p>
-      <a href="#scanner" class="primary-btn">ابدأ رحلتك الرقمية ←</a>
+
+      <div class="hero-actions">
+        <a href="#scanner" class="primary-button">اختبر المحتوى الآن</a>
+        <a href="about.html" class="secondary-button">اكتشف فكرة وَعْي</a>
+      </div>
+
+      <div class="hero-note">
+        <span class="status-dot"></span>
+        المعرفة أول خطوة نحو الأمان الرقمي
+      </div>
     </div>
 
-  </section>
+    <div class="hero-visual reveal">
+      <div class="orbit orbit-one"></div>
+      <div class="orbit orbit-two"></div>
 
-  <!-- SCANNER -->
-  <section class="main-tools section-wrap" id="scanner">
-
-    <div class="scanner-card">
-      <div class="scanner-heading">
-        <span class="mini-shield">✓</span>
-        <div>
-          <h2>معًا نكشف المخاطر</h2>
-          <p>ونحمي معلوماتك</p>
+      <div class="shield">
+        <div class="shield-inner">
+          <span class="shield-icon">✓</span>
+          <span class="shield-word">وعي</span>
+          <small>حماية تبدأ بالمعرفة</small>
         </div>
       </div>
 
-      <div class="tabs">
-        <button class="tab active" data-mode="message">افحص رسالتك</button>
-        <button class="tab" data-mode="link">تحقق من الرابط</button>
-        <button class="tab" data-mode="content">تحقق من المحتوى</button>
+      <div class="floating-card card-top">
+        <span>✦</span> تحقق قبل أن تثق
       </div>
 
-      <textarea id="scanInput"
-        placeholder="الصق الرسالة أو الرابط هنا..."
-        aria-label="النص المراد تحليله"></textarea>
-
-      <button class="analyze-btn" id="analyzeBtn">
-        <span>⌕</span> تحليل الآن
-      </button>
-
-      <div class="result" id="scanResult" aria-live="polite">
-        <strong>مساحة التحليل</strong>
-        <p>أدخل رسالة أو رابطًا لعرض مؤشرات الاشتباه.</p>
+      <div class="floating-card card-bottom">
+        <span>✓</span> كن واعيًا رقميًا
       </div>
-
-      <p class="notice">
-        تنبيه: التحليل إرشادي تجريبي، ولا يثبت سلامة الرابط أو احتياله.
-      </p>
     </div>
-
-    <div class="tools-intro">
-      <span class="eyebrow">اكتشف قبل أن تتأثر</span>
-      <h2>خطوة وعي،<br>تصنع فرقًا</h2>
-      <p>ابدأ بالتحقق، تعرّف على المخاطر، واتخذ قرارات رقمية أكثر وعيًا.</p>
-      <a href="#services" class="text-link">اكتشف خدمات وَعْي ←</a>
-    </div>
-
   </section>
 
-  <!-- SERVICES -->
-  <section class="section-wrap" id="services">
-    <div class="section-heading">
-      <div>
-        <span class="eyebrow">مساحتك للمعرفة والحماية</span>
-        <h2>خدمات وَعْي</h2>
-      </div>
-      <p>معرفة تساعدك على حماية نفسك في العالم الرقمي.</p>
+  <section class="intro-strip reveal">
+    <span>لا تتسرع</span>
+    <span class="strip-dot">✦</span>
+    <span>تحقق</span>
+    <span class="strip-dot">✦</span>
+    <span>فكّر</span>
+    <span class="strip-dot">✦</span>
+    <span>احمِ بياناتك</span>
+  </section>
+
+  <section class="section services-section" id="services">
+    <div class="section-heading reveal">
+      <span class="eyebrow">ماذا يقدم وَعْي؟</span>
+      <h2>وعي يصنع فرقًا</h2>
+      <p>مساحة معرفية تساعدك على فهم أبرز التحديات الرقمية والتعامل معها.</p>
     </div>
 
     <div class="services-grid">
 
-      <a class="service-card" href="#learn">
-        <div class="service-art art-book">
-          <svg viewBox="0 0 100 80">
-            <path d="M10 18Q32 10 49 24V68Q30 54 10 61Z" fill="#D5F6E9" stroke="#18776A" stroke-width="4"/>
-            <path d="M90 18Q68 10 51 24V68Q70 54 90 61Z" fill="#9EDBCB" stroke="#18776A" stroke-width="4"/>
-            <path d="M50 24V68" stroke="#18776A" stroke-width="4"/>
-            <path d="M20 30L39 33M20 40L39 43M61 33L80 30M61 43L80 40" stroke="#18776A" stroke-width="3"/>
-          </svg>
-        </div>
-        <h3>تعلّم كيف تحمي نفسك</h3>
-        <p>أدلة وأساليب الوقاية من الاحتيال.</p>
-        <span class="round-arrow">←</span>
-      </a>
+      <button class="service-card reveal" data-service="phishing">
+        <span class="service-icon">⌁</span>
+        <h3>كشف التصيّد</h3>
+        <p>تعرّف على أساليب الرسائل والروابط المشبوهة.</p>
+        <span class="service-more">اكتشف المزيد ←</span>
+      </button>
 
-      <a class="service-card" href="#privacy">
-        <div class="service-art art-fingerprint">
-          <svg viewBox="0 0 100 80">
-            <path d="M50 12C28 12 16 29 18 49M50 22C34 22 27 34 28 51M50 32C40 32 37 41 38 54M50 12C72 12 84 29 82 49M50 22C66 22 73 34 72 51M50 32C60 32 63 41 62 54M50 42C48 57 45 66 39 72M50 42C52 57 55 66 61 72"
-                  fill="none" stroke="#18776A" stroke-width="4" stroke-linecap="round"/>
-          </svg>
-        </div>
-        <h3>خصوصيتك أولًا</h3>
-        <p>حماية بياناتك وهويتك الرقمية.</p>
-        <span class="round-arrow">←</span>
-      </a>
+      <button class="service-card reveal" data-service="privacy">
+        <span class="service-icon">◈</span>
+        <h3>حماية الخصوصية</h3>
+        <p>تعلّم كيف تحافظ على معلوماتك الشخصية.</p>
+        <span class="service-more">اكتشف المزيد ←</span>
+      </button>
 
-      <a class="service-card" href="#verify">
-        <div class="service-art art-verify">
-          <svg viewBox="0 0 100 80">
-            <path d="M22 9H62L78 25V68H22Z" fill="#D8F3E9" stroke="#18776A" stroke-width="4"/>
-            <path d="M62 9V26H78" fill="none" stroke="#18776A" stroke-width="4"/>
-            <path d="M33 36H65M33 46H56" stroke="#18776A" stroke-width="4" stroke-linecap="round"/>
-            <circle cx="68" cy="56" r="13" fill="#fff" stroke="#18776A" stroke-width="4"/>
-            <path d="M78 66L88 76" stroke="#18776A" stroke-width="5" stroke-linecap="round"/>
-          </svg>
-        </div>
-        <h3>حقيقة أم تضليل؟</h3>
-        <p>التثبت من الأخبار والمعلومات.</p>
-        <span class="round-arrow">←</span>
-      </a>
+      <button class="service-card reveal" data-service="news">
+        <span class="service-icon">◎</span>
+        <h3>التحقق من الأخبار</h3>
+        <p>ميّز بين المعلومات الموثوقة والشائعات.</p>
+        <span class="service-more">اكتشف المزيد ←</span>
+      </button>
 
-      <a class="service-card" href="#help">
-        <div class="service-art art-help">
-          <svg viewBox="0 0 100 80">
-            <circle cx="50" cy="40" r="29" fill="#FFF0E8" stroke="#D77D5F" stroke-width="7"/>
-            <circle cx="50" cy="40" r="15" fill="#fff" stroke="#D77D5F" stroke-width="4"/>
-            <path d="M50 11V25M50 55V69M21 40H35M65 40H79" stroke="#D77D5F" stroke-width="7"/>
-          </svg>
-        </div>
-        <h3>ماذا أفعل الآن؟</h3>
-        <p>إرشادات للتصرف عند مواجهة موقف مشبوه.</p>
-        <span class="round-arrow">←</span>
-      </a>
+      <button class="service-card reveal" data-service="safety">
+        <span class="service-icon">✧</span>
+        <h3>التصرف الآمن</h3>
+        <p>تعرّف على الخطوات المناسبة عند مواجهة موقف رقمي مريب.</p>
+        <span class="service-more">اكتشف المزيد ←</span>
+      </button>
 
-      <a class="service-card" href="#library">
-        <div class="service-art art-library">
-          <svg viewBox="0 0 100 80">
-            <path d="M15 23H85L78 36H22Z" fill="#8BCFC0" stroke="#18776A" stroke-width="3"/>
-            <path d="M15 43H85L78 56H22Z" fill="#B7E5D7" stroke="#18776A" stroke-width="3"/>
-            <path d="M15 63H85L78 76H22Z" fill="#D9F3E9" stroke="#18776A" stroke-width="3"/>
-          </svg>
-        </div>
-        <h3>مركز المعرفة</h3>
-        <p>مصادر رسمية ومعلومات موثوقة.</p>
-        <span class="round-arrow">←</span>
-      </a>
+      <button class="service-card reveal" data-service="law">
+        <span class="service-icon">§</span>
+        <h3>مكافحة الجرائم المعلوماتية</h3>
+        <p>تعرّف على الأنظمة والمسؤولية الرقمية.</p>
+        <span class="service-more">اكتشف المزيد ←</span>
+      </button>
 
+    </div>
+
+    <div class="service-detail" id="serviceDetail" hidden>
+      <button class="detail-close" id="closeDetail" aria-label="إغلاق">×</button>
+      <span class="eyebrow">مساحة معرفية من وَعْي</span>
+      <h3 id="detailTitle"></h3>
+      <p id="detailText"></p>
+      <ul id="detailList"></ul>
     </div>
   </section>
 
-  <!-- LEARN -->
-  <section class="content-section section-wrap" id="learn">
-    <div class="section-heading">
-      <div>
-        <span class="eyebrow">المعرفة هي البداية</span>
-        <h2>تعلّم كيف تحمي نفسك</h2>
-      </div>
+  <section class="section scanner-section" id="scanner">
+    <div class="section-heading reveal">
+      <span class="eyebrow">جرّب بنفسك</span>
+      <h2>هل تستطيع اكتشاف المؤشرات؟</h2>
+      <p>أدخل رسالة أو رابطًا أو نصًا، واستكشف المؤشرات التي قد تستحق الانتباه.</p>
     </div>
 
-    <div class="article-grid">
-      <article class="article-card">
-        <span class="article-number">01</span>
-        <h3>التصيد الإلكتروني</h3>
-        <p>رسائل أو مواقع تنتحل صفة جهات موثوقة بهدف خداع المستخدم والحصول على بياناته.</p>
-        <span class="article-tag">انتبه للروابط والمرسل</span>
-      </article>
-
-      <article class="article-card">
-        <span class="article-number">02</span>
-        <h3>انتحال الهوية</h3>
-        <p>استخدام بيانات شخص آخر أو صفته دون إذن، بقصد التضليل أو الإضرار.</p>
-        <span class="article-tag">احمِ بياناتك الشخصية</span>
-      </article>
-
-      <article class="article-card">
-        <span class="article-number">03</span>
-        <h3>الهندسة الاجتماعية</h3>
-        <p>أساليب تعتمد على التأثير في الأشخاص ودفعهم إلى مشاركة معلومات أو تنفيذ إجراءات غير آمنة.</p>
-        <span class="article-tag">لا تتسرع في الاستجابة</span>
-      </article>
-    </div>
-  </section>
-
-  <!-- PRIVACY -->
-  <section class="content-section section-wrap" id="privacy">
-    <div class="privacy-panel">
-      <div>
-        <span class="eyebrow">خصوصيتك مسؤوليتك</span>
-        <h2>بياناتك جزء من هويتك</h2>
-        <p>تعامل مع معلوماتك الشخصية بعناية، ولا تشاركها إلا عند الحاجة ومع جهة موثوقة.</p>
+    <div class="scanner-box reveal">
+      <div class="scanner-tabs">
+        <button class="scanner-tab active" data-tab="message">رسالة</button>
+        <button class="scanner-tab" data-tab="link">رابط</button>
+        <button class="scanner-tab" data-tab="content">خبر أو نص</button>
       </div>
-      <div class="privacy-list">
-        <div>✓ استخدم كلمات مرور قوية ومختلفة.</div>
-        <div>✓ فعّل المصادقة متعددة العوامل.</div>
-        <div>✓ راجع أذونات التطبيقات.</div>
-        <div>✓ تجنب نشر معلوماتك الحساسة.</div>
-        <div>✓ حدّث أجهزتك وتطبيقاتك باستمرار.</div>
+
+      <div class="scanner-panel">
+        <label for="scanInput" id="scanLabel">أدخل الرسالة هنا</label>
+
+        <textarea id="scanInput" rows="5" placeholder="الصق الرسالة التي تريد فحصها..."></textarea>
+
+        <button class="primary-button scan-button" id="scanButton">افحص الآن</button>
+
+        <div class="scan-result" id="scanResult" aria-live="polite" hidden>
+          <h3 id="resultTitle"></h3>
+          <p id="resultText"></p>
+          <ul id="resultList"></ul>
+        </div>
+
+        <p class="disclaimer">
+          تنبيه: الفحص توعوي مبدئي يعتمد على مؤشرات عامة،
+          ولا يُعد إثباتًا قاطعًا على سلامة المحتوى أو خطورته.
+        </p>
       </div>
     </div>
   </section>
 
-  <!-- VERIFY -->
-  <section class="content-section section-wrap" id="verify">
-    <div class="section-heading">
-      <div>
-        <span class="eyebrow">لا تصدق كل ما تراه</span>
-        <h2>حقيقة أم تضليل؟</h2>
-      </div>
+  <section class="section tips-section">
+    <div class="section-heading reveal">
+      <span class="eyebrow">خطوات بسيطة • أثر كبير</span>
+      <h2>اجعل وعيك عادة يومية</h2>
     </div>
 
-    <div class="verify-panel">
-      <div class="verify-icon">◎</div>
-      <div>
-        <h3>قبل أن تصدّق أو تنشر</h3>
-        <p>تحقق من مصدر الخبر، وتاريخ نشره، والسياق الذي ورد فيه، وابحث عن تأكيد من مصادر مستقلة موثوقة.</p>
-        <ul>
-          <li>من الجهة التي نشرت المعلومة؟</li>
-          <li>هل يوجد مصدر أصلي يمكن الرجوع إليه؟</li>
-          <li>هل الصورة قديمة أو مقتطعة من سياق آخر؟</li>
-          <li>هل توجد جهات موثوقة تؤكد الخبر؟</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- HELP -->
-  <section class="content-section section-wrap" id="help">
-    <div class="section-heading">
-      <div>
-        <span class="eyebrow">التصرف الصحيح يصنع الفرق</span>
-        <h2>ماذا أفعل الآن؟</h2>
-      </div>
-    </div>
-
-    <div class="help-grid">
-      <article class="help-card">
-        <h3>وصلتني رسالة مشبوهة</h3>
-        <p>لا تضغط على الروابط، ولا تشارك رموز التحقق أو بياناتك، وتحقق من الجهة عبر قنواتها الرسمية.</p>
+    <div class="tips-grid">
+      <article class="tip-card reveal">
+        <span>01</span>
+        <h3>توقف قبل النقر</h3>
+        <p>لا تفتح رابطًا لمجرد أن الرسالة تطلب منك ذلك بسرعة.</p>
       </article>
-      <article class="help-card">
-        <h3>أدخلت بياناتي في موقع مشبوه</h3>
-        <p>غيّر كلمة المرور من الموقع الرسمي، وفعّل المصادقة متعددة العوامل، وتواصل مع الجهة أو البنك إذا كانت بيانات مالية.</p>
+
+      <article class="tip-card reveal">
+        <span>02</span>
+        <h3>تحقق من المصدر</h3>
+        <p>ابحث عن المعلومة في الموقع الرسمي قبل إعادة نشرها.</p>
       </article>
-      <article class="help-card">
-        <h3>تعرضت لابتزاز إلكتروني</h3>
-        <p>لا تستجب للتهديدات أو ترسل المزيد من المعلومات، واحتفظ بالأدلة واطلب المساعدة من شخص موثوق والجهات المختصة.</p>
+
+      <article class="tip-card reveal">
+        <span>03</span>
+        <h3>احفظ خصوصيتك</h3>
+        <p>لا تشارك كلمات المرور أو رموز التحقق مع الآخرين.</p>
+      </article>
+
+      <article class="tip-card reveal">
+        <span>04</span>
+        <h3>فكّر قبل المشاركة</h3>
+        <p>اسأل نفسك: هل المحتوى صحيح؟ وهل نشره مسؤول؟</p>
       </article>
     </div>
   </section>
 
-  <!-- LIBRARY -->
-  <section class="content-section section-wrap" id="library">
-    <div class="section-heading">
-      <div>
-        <span class="eyebrow">تعلّم من مصادر موثوقة</span>
-        <h2>مركز المعرفة</h2>
-      </div>
+  <section class="section sources-section" id="sources">
+    <div class="section-heading reveal">
+      <span class="eyebrow">المعرفة من مصدرها</span>
+      <h2>مصادر موثوقة</h2>
+      <p>لأن الوعي يبدأ من المعلومة الصحيحة، تعرّف على الجهات الرسمية.</p>
     </div>
 
-    <div class="library-grid">
-      <a href="https://nca.gov.sa/" target="_blank" rel="noopener">
-        <span>🏛️</span>
+    <div class="sources-grid">
+      <a class="source-card reveal" href="https://nca.gov.sa/" target="_blank" rel="noopener noreferrer">
+        <span>01</span>
         <h3>الهيئة الوطنية للأمن السيبراني</h3>
-        <p>التوعية والإرشادات والمعلومات السيبرانية الرسمية.</p>
+        <p>إرشادات ومعلومات لتعزيز الأمن السيبراني.</p>
         <b>زيارة الموقع ←</b>
       </a>
 
-      <a href="https://cst.gov.sa/" target="_blank" rel="noopener">
-        <span>📡</span>
+      <a class="source-card reveal" href="https://cst.gov.sa/" target="_blank" rel="noopener noreferrer">
+        <span>02</span>
         <h3>هيئة الاتصالات والفضاء والتقنية</h3>
-        <p>معلومات وخدمات متعلقة بالاتصالات والفضاء والتقنية.</p>
+        <p>معلومات وخدمات مرتبطة بالاتصالات والتقنية.</p>
         <b>زيارة الموقع ←</b>
       </a>
 
-      <a href="https://laws.boe.gov.sa/" target="_blank" rel="noopener">
-        <span>⚖️</span>
-        <h3>هيئة الخبراء بمجلس الوزراء</h3>
-        <p>الأنظمة واللوائح السعودية، ومنها نظام مكافحة جرائم المعلوماتية.</p>
+      <a class="source-card reveal" href="https://laws.boe.gov.sa/" target="_blank" rel="noopener noreferrer">
+        <span>03</span>
+        <h3>بوابة الأنظمة السعودية</h3>
+        <p>للاطلاع على الأنظمة واللوائح الرسمية في المملكة.</p>
         <b>زيارة الموقع ←</b>
       </a>
     </div>
-  </section>
 
-  <!-- SAUDI REFERENCE -->
-  <section class="saudi-section section-wrap" id="saudi">
-    <div class="saudi-title">
-      <span class="saudi-emblem">🇸🇦</span>
-      <div>
-        <span class="eyebrow">مصادر رسمية</span>
-        <h2>المرجع السيبراني السعودي</h2>
-        <p>مصادر موثوقة لحماية رقمية أوسع.</p>
-      </div>
-    </div>
-
-    <div class="saudi-items">
-      <a href="https://nca.gov.sa/" target="_blank" rel="noopener">
-        <span>🏛️</span>
-        <b>الأنظمة والجرائم المعلوماتية</b>
-        <small>الرجوع إلى المصادر النظامية الرسمية.</small>
-      </a>
-      <a href="https://nca.gov.sa/" target="_blank" rel="noopener">
-        <span>🔎</span>
-        <b>خدمات التحقق</b>
-        <small>التعرف على الخدمات الرسمية المتاحة.</small>
-      </a>
-      <a href="https://cst.gov.sa/" target="_blank" rel="noopener">
-        <span>📣</span>
-        <b>كيف أبلّغ؟</b>
-        <small>التوجه إلى الجهة المختصة حسب نوع البلاغ.</small>
-      </a>
-      <a href="https://nca.gov.sa/" target="_blank" rel="noopener">
-        <span>🔔</span>
-        <b>التنبيهات والحملات</b>
-        <small>متابعة التوعية والتنبيهات الرسمية.</small>
-      </a>
-    </div>
-    <p class="source-note">وَعْي منصة توعوية مستقلة، وليست جهة حكومية أو قناة رسمية لتلقي البلاغات.</p>
-  </section>
-
-  <!-- BANNER -->
-  <section class="banner section-wrap">
-    <div class="banner-art">🇸🇦</div>
-    <div>
-      <h2>أمنك الرقمي مسؤوليتنا جميعًا</h2>
-      <p>معًا نبني مجتمعًا رقميًا أكثر أمنًا ووعيًا.</p>
-    </div>
-    <a href="#about" class="light-btn">تعرف على المزيد ←</a>
-  </section>
-
-  <!-- ABOUT -->
-  <section class="about-section section-wrap" id="about">
-    <span class="eyebrow">عن المشروع</span>
-    <h2>لماذا وَعْي؟</h2>
-    <p>
-      وَعْي مشروع توعوي رقمي يهدف إلى تعزيز الثقافة السيبرانية،
-      ومساعدة المستخدم على فهم المخاطر الرقمية، وحماية خصوصيته،
-      والوصول إلى المعلومات والمصادر الموثوقة.
+    <p class="source-note">
+      تُستخدم هذه الروابط للتوعية والرجوع إلى المصادر الرسمية،
+      ولا تمثل خدمة للإبلاغ عن الجرائم.
     </p>
+  </section>
+
+  <section class="section contact-section" id="contact">
+    <div class="contact-content reveal">
+      <span class="eyebrow">رأيك يهمنا</span>
+      <h2>شاركنا فكرتك</h2>
+      <p>هل لديك اقتراح أو ملاحظة تساعد على تطوير تجربة وَعْي؟</p>
+    </div>
+
+    <form class="contact-form reveal" id="contactForm">
+      <label for="contactName">الاسم</label>
+      <input id="contactName" type="text" placeholder="اكتب اسمك" required>
+
+      <label for="contactEmail">البريد الإلكتروني</label>
+      <input id="contactEmail" type="email" placeholder="name@example.com" required>
+
+      <label for="contactMessage">رسالتك</label>
+      <textarea id="contactMessage" rows="4" placeholder="اكتب اقتراحك هنا..." required></textarea>
+
+      <button type="submit" class="primary-button">إرسال الرسالة</button>
+      <p class="form-note">سيتم فتح تطبيق البريد الإلكتروني لإرسال رسالتك.</p>
+    </form>
   </section>
 
 </main>
 
-<footer class="footer" id="footer">
+<footer class="footer">
   <div class="footer-brand">
-    <strong>وَعْي</strong>
-    <small>W A I</small>
+    <span class="logo-mark">و</span>
+    <div>
+      <strong>وَعْي | WAI</strong>
+      <p>وعيك خط دفاعك الأول</p>
+    </div>
   </div>
-  <p>وعيك.. أمانك في عالم رقمي متغير.</p>
+
   <div class="footer-links">
     <a href="#home">الرئيسية</a>
-    <a href="#services">الخدمات</a>
-    <a href="#library">المكتبة</a>
-    <a href="#about">عن المشروع</a>
+    <a href="#services">خدماتنا</a>
+    <a href="#scanner">اختبر المحتوى</a>
+    <a href="about.html">عن وَعْي</a>
   </div>
-  <small>مشروع توعوي مستقل - جميع الحقوق محفوظة © وَعْي</small>
+
+  <div class="footer-bottom">
+    <p>© 2026 وَعْي — جميع الحقوق محفوظة</p>
+    <p>تاريخ الإنشاء: 9 نوفمبر 2026</p>
+    <p>مشروع توعوي لتعزيز الوعي والأمان الرقمي</p>
+  </div>
 </footer>
 
-<button id="topBtn" class="top-btn" aria-label="العودة للأعلى">↑</button>
+<button id="backToTop" class="back-to-top" aria-label="العودة للأعلى">↑</button>
 
 <script src="script.js"></script>
 </body>
